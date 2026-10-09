@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana da Etec</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/7.css">
+</head>
+<style>
+    *{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+
+    }
+  
+      .container-nav{
+        background-color:  rgb(246, 252, 255);    
+        display:flex;
+        justify-content:center;
+        width: 100%;
+        height: 9vh; 
+      }
+nav{
+    background: #feffff;
+    border-radius: 50px;
+     padding: 8px 20px;
+
+     width: fit-content;
+     margin-left: auto;
+     margin: right 30px;
+    box-shadow: 0 10px 5px rgba(1, 7, 50, 0.2);
+}
+
+nav ul li{
+ list-style: none;
+ display:inline-block;
+ padding: 13px 25px;
+ margin: 0 5px;
+ font-size: 14px;
+cursor:pointer;
+opacity:0.5;
+position: relative;
+border-radius: 25px;
+transition: background-color 0.6s, top 0.6s, opacity 0.6s;
+top: -1px;
+
+
+}
+nav ul li:hover{
+    background-color: #6bd8ffd6;
+    opacity: 2;
+    top: -1px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+nav ul li:active{
+    transform: scale(0.96);
+}
+.header{
+    color: rgb(18, 0, 78);
+  position:relative;
+  top: 8px;
+  left: 10%;
+  border-radius: 10px 60px 30px;
+  width: 80%;
+  padding: 20px;
+  height: 400px;
+  background-repeat: no-repeat;
+ background-size: cover;
+ background-position-y: 50%;
+  background-image: url(../oiii-20260929T121945Z-1-001/oiii/imagens/_\ \(4\).jpeg);
+  
+}
+.conteudo1{
+    height: 300px;
+    width:60%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba( 0, 0, 0, 0.25);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.texto1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+@keyframes slidein{
+    from{
+        margin-left: 40%;
+        width:100%
+    }
+    to{
+        margin-left:0%;
+    width: 100%;
+    }
+}
+.imagem{
+  height: 5%;
+width:5%;
+position:relative;
+left:60%;
+top: -10%;
+      animation-name: floating; 
+animation-duration: 3s; 
+animation-iteration-count: infinite; 
+animation-timing-function: ease-in-out;
+} 
+
+@keyframes floating { 
+0% { 
+transform: translate(0,  0px); 
+} 
+
+50%  { 
+transform: translate(0, 15px); 
+} 
+
+100%   {
+transform: translate(0, -0px); 
+} 
+}     
+
+.texto2{
+    text-align: center;
+    text-decoration:underline;
+}
+.lista{
+    position: relative;
+    left: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.icon{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+    position:relative;
+    left: 50%;
+    top: -20px;
+}
+.icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}  
+    
+.main{
+    top: 50px;
+     margin-top:40px;
+    padding: 10px;
+   align-items: center;
+
+}
+.galeria{
+margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+
+}
+.galeria .image{
+    width: calc(100%/ 4);
+padding: 7px;
+overflow:hidden;
+
+}
+.galeria .image img{
+    width:100%;
+    transition: all 0.3s ease;
+    vertical-align:middle;
+    cursor:pointer;
+    filter:grayscale(100%);
+    transition: 0.5s ease;
+}
+.galeria .image:hover img{
+transform: scale(1.1);
+filter:grayscale(0%);
+}
+.meudeus{
+    text-align:center;
+    font-size: 20px;
+    position:relative;
+    left:0.5%;
+    text-decoration:underline;
+    color:rgb(11, 11, 70);
+    }
+    .coloridinho{
+        position:relative;
+        left: 25%;
+        Width: 60%;
+    }
+    .container-curso{
+        position:relative;
+         width: 100%;
+        height: 90vh; 
+        display:flex;
+        flex-direction: column;
+        margin-top:50px;
+        color: rgb(18, 0, 78);
+  position:relative;
+  top: 8px;
+  left: 10%;
+  border-radius: 10px 60px 30px;
+  width: 80%;
+  padding: 20px;
+  height:200px;
+  background-repeat: no-repeat;
+ background-size: cover;
+  background-image: url(../oiii-20260929T121945Z-1-001/oiii/imagens/_\ \(2\).gif);
+  background-position-y: 50%;
+    
+    
+    }
+    .container-curso2{
+        position:relative;
+         width: 100%; 
+        display:flex;
+        flex-direction: column;
+        margin-top:140px;
+        color: rgb(255, 255, 255);
+        box-shadow: 0 4px 4px rgba(255, 255, 255, 0.2);
+    
+    }
+    .texto3{
+        font-size:50px;
+        position:relative;
+        left:15px;
+        color:rgb(171, 255, 255);
+        animation: jerky 0.5s infinite;
+    }
+
+    @keyframes jerky {
+      0% {
+        transform: rotate(2deg);
+      }
+
+      50% {
+        transform: rotate(2deg);
+      }
+
+      51% {
+        transform: rotate(-2deg);
+      }
+
+      100% {
+        transform: rotate(-2deg);
+      }
+    }
+    
+
+    .cursinho{
+        position:relative;
+        left: 50px;
+         font-size: 50px;
+         color: rgb(0, 0, 0);
+ border-radius: 10px;
+    box-shadow: 20px 20px 40px rgba( 0, 0, 0, 0.25);
+    border-top: 5px solid rgba(255, 255, 255, 0.5);
+    border-right: 5px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    
+    }
+    .card{
+        align-items:center;
+        justify-content:center;
+        position:relative;
+      
+    }
+    .title-bar-text{
+        color:black;
+    }      
+    .list2{
+        position:relative;
+        left:10px;
+        font-size:15px;
+        
+    }
+    .sidebar{
+        position:relative;
+        left: 55%;
+        top: 100px;
+ 
+max-width: 500px;
+height: 400px;
+    }
+    .configurar{
+        position:relative;
+        left:150px;
+}
+
+.container-sobre{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+</style>
+<body>
+    <div class="container-nav">
+        <div class="icon"> 
+       
+     <img src="../oiii-20260929T121945Z-1-001/oiii/imagens/___6_-removebg-preview.png" alt="..."> </div>
+    <nav> 
+    <ul>
+        <li><a href="../HTML/pricipalkh.html"> Página Inicial</a></li>
+        <li><a href="../HTML/CursoInfo.html">  Curso Infonet</a> </li>
+        <li><a href="../HTML/qmsomos.html">  Sobre Nós</a></li>
+        <li><a href="#">  Softwares/Apps usados.</a> </li>
+
+     </ul>
+    </nav>
+    </div>
+<header>
+    <div class="header" id="1">
+        <div class="imagem">
+            <img src="../oiii-20260929T121945Z-1-001/oiii/imagens/test-removebg-preview.png" alt="...">
+        </div>
+  <section class="primeiro">
+      <div class="conteudo1">
+        <h1 class="texto1 fw-bold"> Bem-vindo ao nosso site!</h1>
+        <h2 class="texto2"> Conteúdos:</h2>
+        <div class="lista">
+        <li> Apresentação de projetos;</li>
+        <li> Sobre o Curso;</li>
+        <li> Sobre os alunos envolvidos;</li>
+        <li> Softwares/apps ou sites que utilizamos.</li>
+        <img src="https://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" alt="...">
+    </div>
+      </div>
+    </section>
+    </div>
+</header>
+<br>
+<main>
+    <div class="main">
+    <section class="segundo">
+        <br>
+        <div class="coloridinho">
+            <img src="../oiii/imagens//mnhD.gif" alt="">
+        </div>
+        <p class="meudeus"><em>  Selecione as Imagens.</em> </p>
+         <script src="../página.js"></script>
+        <div class="galeria">
+            <div class="image"><span><img src="../abc/demoniogif.gif" alt=""></span></div>
+            <div class="image"><span><img src="../abc/Kuromi-Hello-Kitty-Character-84.png" alt=""></span></div>
+            <div class="image"><span><img src="../abc/pokemon-krookodile.gif" alt=""></span></div>
+            <div class="image"><span><img src="../abc/Jojo reference 🫵.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="../oiii-20260929T121945Z-1-001/oiii/imagens/SHAANE.png" alt=""></span></div>
+            <div class="image"><span><img src="../oiii-20260929T121945Z-1-001/oiii/imagens/SHAANE.png" alt=""></span></div>
+            <div class="image"><span><img src="../oiii-20260929T121945Z-1-001/oiii/imagens/SHAANE.png" alt=""></span></div>
+            <div class="image"><span><img src="../oiii-20260929T121945Z-1-001/oiii/imagens/SHAANE.png" alt=""></span></div>
+            <div class="image"><span><img src="../oiii-20260929T121945Z-1-001/oiii/imagens/SHAANE.png" alt=""></span></div>
+        </div>
+       
+    </section>
+</div>
+
+<div class="container-curso">
+<section  class="terceiro">
+    <div class="wrap">
+    <h1 class="cursinho fw-bold" id="curso"> Introdução ao curso</h1>
+
+<div class="container-curso2"></div>
+
+<div class="window active" style="max-width: 600px">
+  <div class="title-bar">
+    <div class="title-bar-text"><h3>Informática para Internet</h3></div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <h3 class="text-center"> Contexto Geral</h3>
+    <p><strong>O curso de Informática para Internet (conhecido também como Infonet), é a área que se trabalha com o desenvolvimento de páginas web. Durante o curso os alunos aprenderão a utilizar softwares para edições de imagens,
+        controlar/editar dados, solucionar problemas, realizar o design e tornar o site acessível.
+    </p> <p> Atualmente o vestibular para este curso não está mais disponível na instituição Etec Lauro Gomes.
+    </p></strong> 
+    <br>
+    <h3> O que aprendemos?</h3>
+    <div class="list2">
+    <li>  Desenvolvimentos de Páginas Web;</li>
+    <li> Costumização de plataformas e desenvolvimento de identidades visuais;</li>
+    <li> Manutenção e criação de Banco de Dados;</li>
+    <li> Desenvolvimento de planilhas e controle de dados;</li>
+    <li> Otimização de imagens.</li>
+    <br>
+<img src="https://dl8.glitter-graphics.net/pub/39/39368n1b2x3prdz.gif" width=83 height=49
+>
+<div role="progressbar" class="marquee"></div>
+</div>
+  </div>
+</div>
+    </div>
+</section>
+</div>
+
+<div class="containerside">
+<aside class="sidebar">
+    <div class="window" style="max-width: 600px">
+  <div class="title-bar">
+    <div class="title-bar-text"></div>
+  </div>
+  <div class="window-body has-space">
+     <h1>Está interessado?</h1>
+     <p><strong>Clique no botão para ser redirecionado a página oficial do CPS (Centro Paula Souza) para mais informações.</strong></p>
+     <p><em> (Isso pode demorar alguns instantes).</em></p>
+     <br>
+     <button class="configurar">
+  <a href="https://www.cps.sp.gov.br/cursos-etec/informatica-para-internet/"> Saiba Mais!</a>
+</button>
+</div>
+</div>
+    </aside> 
+</div>
+   <div class="container-sobre">
+       
+   </div>
+  </main>
+
+ 
+</body>
+</html>
